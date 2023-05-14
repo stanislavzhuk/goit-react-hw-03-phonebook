@@ -2,18 +2,36 @@ import styled from '@emotion/styled';
 
 export const Item = styled.li`
   display: flex;
-  gap: 8px;
   align-items: baseline;
   justify-content: space-between;
-`;
+  gap: 8px;
+  `;
 
 export const Contact = styled.p`
-  margin-bottom: 20px;
-`;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+  `;
 
 export const Button = styled.button`
+  display: inline-block;
+
+  border: 2px solid #a75f06;
   border-radius: 8px;
+  background-color: #e6f4f1;
+
+  font-size: 18px;
+  font-weight: 500;
+
   cursor: pointer;
-  width: 100px;
-  padding: 5px;
-`;
+
+  transition: border-color 300ms ease-in, background-color 300ms ease-in;
+  
+  :hover,
+  :focus {
+    border-color: #f5b05c;
+    background-color: #C0C0C0;
+  }
+  `;
+  
