@@ -16,6 +16,8 @@ export const Contact = styled.p`
 
 export const Button = styled.button`
   display: inline-block;
+  margin-bottom: 8px;
+
 
   border: 2px solid #a75f06;
   border-radius: 8px;

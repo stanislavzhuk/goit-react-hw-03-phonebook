@@ -63,8 +63,8 @@ class ContactForm extends Component {
             name="number"
             value={number}
             onChange={this.onChange}
-            pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+            pattern="\(\d{3}\) \d{3}-\d{2}-\d{2}"
+            title="Pone number must consist of 10 digits. For exemple 0987654321"
             placeholder="(XXX) XXX XX XX"
             maxLength="10"
             required
